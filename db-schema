@@ -1,0 +1,10 @@
+CREATE DATABASE `polls`;
+
+CREATE TABLE IF NOT EXISTS `poll_answer` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`author` text NOT NULL,
+	`votes` int(255) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+INSERT INTO `poll_answer` (`author`, `votes`) VALUES ('Miguel de Cervantes', 0), ('Charles Dickens', 0), ('J.R.R. Tolkien', 0), ('Antoine de Saint-Exuper', 0);
